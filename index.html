@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	
+	<!-- Importing jQuery and jQuery UI -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+  		integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  		crossorigin="anonymous">
+	</script>
+	<script
+	  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+	  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+	  crossorigin="anonymous">
+	</script>
+	
+	<!-- Accurate timer -->
+	<script src="js/timer.js"></script>
+
+	<!-- Google font -->
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+	<!-- Fontawesome! -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<!-- Carousel library -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Title: the text shown on the tab -->
+	<title>SuperStar Zhenguwu</title>
+	</head>
+	
+	<!-- All the content displayed on the screen -->
+	<body>
+
+		<!-- Loading page with 2 animated logos -->
+		<section id="loading" class="fullw fullh">
+			<img src="images/dalcom.png" id="dalcom" class="fullw hide">
+			<img src="images/logo.png" id="logo" class="fullw hide">
+		</section>
+		
+
+		<!-- Login page with username and password TBD -->
+		<section id="login" class="fullw fullh hide">
+		</section>
+		
+
+		<!-- Selection page for songs -->
+		<section id="select" class="fullw fullh hide">
+			
+			<!-- Background image below everything -->
+			<div id="select_background" class="fullw fullh">
+				<img src="images/twice.jpg" width="100%">
+			</div>
+		
+			<!-- Top bar -->
+			<div id="select_top">
+				<div id="select_username" class="fullh">
+					<p id="username">Cynthia ★彡</p>
+				</div>
+				<div id="select_difficulty" class="fullh">
+					<p id="select_difficulty_content"></p>
+				</div>
+			</div>
+		
+			<!-- Gradient to darken the sides of the screen -->
+			<div id="select_gradient"></div>
+		
+			<!-- Carousel for song selection -->
+			<div id="select_center_container">
+				<div id="select_center" class="owl-carousel owl-theme fullh fullw">
+	    			<div id="bloom" class="selection_song">
+	    				<img class="owl-lazy" data-src="images/bloom.jpg">
+	    				Bloom Bloom </br> - The Boyz
+	    			</div>
+	    			<div id="twilight" class="selection_song">
+	    				<img class="owl-lazy" data-src="images/twilight.jpg">
+	    				Twilight </br> - ONEUS
+	    			</div>
+	    			<div id="dont" class="selection_song">
+	    				<img class="owl-lazy" data-src="images/dont.png">
+	    				Don't </br> - Loco x Hwasa
+	    			</div>	    			
+				</div>
+			</div>
+			
+			<!-- Bottom bar -->
+			<div id="select_bottom">
+				<div id="select_info">
+					<p id="select_info_content">THE BOYZ(더보이즈) - 2nd Single Album - Bloom Bloom</p>
+				</div>
+				<div id="select_start">
+					<p id="start">START</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Game page -->
+		<section id="game" class="fullw fullh hide">
+			
+			<!-- Background image -->
+			<div id="game_background" class="fullw fullh">
+			</div>
+
+			<!-- Score counter -->
+			<div id="game_score" class="fullw">
+				<p id="game_score_content"></p>
+			</div>
+
+			<!-- Rhythm tiles -->
+			<div id="game_tiles" class="fullw fullh">
+			</div>
+
+		</section>
+		
+		<!-- Javascript files are at the end so they are loaded after the HTML -->
+		<!-- 
+		Firebase not used
+		<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+  		<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyD4GnVwI1G-2cPexHGsdqAvNO9S3NRN9AE",
+				authDomain: "superstar-835e0.firebaseapp.com",
+				databaseURL: "https://superstar-835e0.firebaseio.com",
+				projectId: "superstar-835e0",
+				storageBucket: "superstar-835e0.appspot.com",
+				messagingSenderId: "924409849870",
+				appId: "1:924409849870:web:30d95dbf879cde8b"
+			};
+			firebase.initializeApp(firebaseConfig);
+		</script>-->
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
